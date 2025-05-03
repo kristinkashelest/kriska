@@ -1,0 +1,84 @@
+
+body {
+  font-family: Roboto, sans-serif;
+background-image: "123.png";
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#7affc4;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Geneva;
+  color:#70ffd7
+}
+h1:hover {
+  color:#7bff7a;
+}
+
+p {
+  color:#38ffb9
+}
+p:hover {
+  color:#7bff7a;
+}
+p {
+  font-style: italic;
+  text-align: inherit;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 2px solid #dadada;
+  width: 420px;
+}
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #7bff7a;
+}
+button:hover {
+  color:#00dd6b;
+}
